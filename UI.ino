@@ -9,7 +9,8 @@ long lastTicks;
 boolean combo;
 
 void UI(){
-  if(pokemon) pokemonMode();
+  if(test) testMode();
+ else if(pokemon) pokemonMode();
 
   else{
     if(page<4) hw.setColor(page);
