@@ -18,6 +18,9 @@
 
 unsigned char midiSound;
 
+#define NUMBER_OF_MESSAGE_BYTES 16
+#define NUMBER_OF_SYSEX_BYTES 14
+unsigned char sysExArray[NUMBER_OF_SYSEX_BYTES];
 
 void HandleNoteOn(byte channel, byte note, byte velocity) { 
   if(channel==inputChannel){
@@ -136,9 +139,7 @@ void indicateMidiChannel(unsigned char _channel){
 
 
 
-#define NUMBER_OF_MESSAGE_BYTES 16
-#define NUMBER_OF_SYSEX_BYTES 14
-unsigned char sysExArray[NUMBER_OF_SYSEX_BYTES];
+
 
 
 

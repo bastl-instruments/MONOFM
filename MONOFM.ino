@@ -67,8 +67,18 @@ void updateControl(){
   MIDI.read(inputChannel);
   hw.update();
   while(MIDI.read(inputChannel)) MIDI.read(inputChannel);
+   MIDI.read(inputChannel);
+  MIDI.read(inputChannel);
+  MIDI.read(inputChannel);
+  MIDI.read(inputChannel);
+  MIDI.read(inputChannel);
   UI();
   while(MIDI.read(inputChannel)) MIDI.read(inputChannel);
+   MIDI.read(inputChannel);
+  MIDI.read(inputChannel);
+  MIDI.read(inputChannel);
+  MIDI.read(inputChannel);
+  MIDI.read(inputChannel);
 
 }
 
